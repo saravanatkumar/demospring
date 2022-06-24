@@ -17,7 +17,7 @@ public class CustomerService {
     }
 
     public List<Customer> findByCustomerName(String name) {
-         return customerRepository.findByFirstName(name);
+         return customerRepository.findAllByFirstName(name);
     }
 
 

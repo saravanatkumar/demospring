@@ -4,7 +4,9 @@ plugins {
 	id 'java'
 	id 'war'
 	id 'jacoco'
+
 }
+apply plugin: 'maven'
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -27,8 +29,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation "org.springframework.boot:spring-boot-starter-security"
-	implementation 'org.springframework.security:spring-security-test'
+	//implementation "org.springframework.boot:spring-boot-starter-security"
+	//implementation 'org.springframework.security:spring-security-test'
 	implementation 'org.flywaydb:flyway-core'
 	implementation 'org.json:json:20171018'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
